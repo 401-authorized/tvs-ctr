@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      font-family: Poppins, system-ui, sans-serif;
+    }
+    body {
+      @apply font-poppins text-lg;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply text-dark;
+    }
+    .title,
+    .section-title {
+      @apply text-5xl lg:text-7xl mb-6 font-bold;
+    }
+    .h2 {
+      @apply text-5xl lg:text-7xl font-bold;
+    }
+    .pretitle {
+      @apply text-lg lg:text-[22px] text-light mb-4 lg:mb-6 uppercase font-normal;
+    }
+    .lead {
+      @apply text-2xl text-light font-normal mb-6;
+    }
+    .link {
+      @apply text-lg text-dark;
+    }
+    .section {
+      @apply  pb-14 ;
+    }
+    .btn {
+      @apply rounded-lg transition flex justify-center items-center;
+    }
+    .btn-lg {
+      @apply h-[75px] px-6 text-2xl font-normal;
+    }
+    .btn-md {
+      @apply h-[60px] px-[16px] text-lg font-normal;
+    }
+    .btn-sm {
+      @apply h-[48px] px-[16px] text-lg font-normal;
+    }
+    .btn-accent {
+      @apply text-white bg-accent hover:bg-accentHover;
+    }
+    .btn-white {
+      @apply text-accent bg-white hover:bg-white/90;
+    }
+    .btn-outline {
+      @apply bg-transparent text-accent border border-accent hover:bg-accent hover:text-white;
+    }
+    .btn-link {
+      @apply text-accent text-xl lg:text-2xl;
+    }
+    .btn-outline-icon-accent {
+      @apply text-accent border border-accent hover:bg-accent hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center;
+    }
+    .btn-link-table {
+      @apply relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50;
+    }
+  }
