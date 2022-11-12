@@ -107,7 +107,7 @@ const BasicForm = (props: any) => {
       </div>
       <div className="form-actions flex mt-5 w-full">
         <button
-          className="btn btn-sm  bg-accent  text-white hover:bg-accentHover btn-outline w-full hidden lg:flex"
+          className="btn btn-sm  bg-accent  text-white hover:bg-accentHover btn-outline w-full  lg:flex"
           disabled={!formIsValid}
         >
           Submit
