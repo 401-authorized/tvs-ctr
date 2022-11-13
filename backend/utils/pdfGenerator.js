@@ -1,13 +1,7 @@
 const puppeteer = require("puppeteer");
 const path = require("path");
-const PCR = require("puppeteer-chromium-resolver");
-const stats = PCR.getStats();
 const generatePdf = async (html) => {
-  const browser = await stats.puppeteer.launch({
-        headless: false,
-        args: ["--no-sandbox"],
-        executablePath: stats.executablePath
-  });
+  const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.setContent(html);
   await page.addStyleTag({
