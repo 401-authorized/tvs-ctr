@@ -36,7 +36,7 @@ router.post("/", async (req, res) => {
     });
     res.download(outputFile);
   } catch (err) {
-    // console.log(err);
+    console.log(err);
     const e = ExceptionHandler(err);
     res.status(e.code).json(e);
   }
