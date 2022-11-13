@@ -26,7 +26,7 @@
     "muhammara": "^3.2.0",
     "pdfkit": "^0.13.0",
     "puppeteer": "^19.2.2",
-    "socket.io": "^4.5.3",
-    "puppeteer-chromium-resolver" : "*"
+    "puppeteer-chromium-resolver": "^19.1.0",
+    "socket.io": "^4.5.3"
   }
 }
