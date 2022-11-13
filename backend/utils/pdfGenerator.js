@@ -1,18 +1,8 @@
 const puppeteer = require("puppeteer");
 const path = require("path");
 const PCR = require("puppeteer-chromium-resolver");
+const stats = PCR.getStats();
 const generatePdf = async (html) => {
-    const option = {
-        revision: "",
-        detectionPath: "",
-        folderName: "workspace/.chromium-browser-snapshots",
-        defaultHosts: ["https://storage.googleapis.com", "https://npm.taobao.org/mirrors"],
-        hosts: [],
-        cacheRevisions: 2,
-        retry: 3,
-        silent: false
-    };
-    const stats = await PCR(option);
   const browser = await stats.puppeteer.launch({
         headless: false,
         args: ["--no-sandbox"],
