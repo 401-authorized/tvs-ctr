@@ -5,7 +5,7 @@ const generatePdf = async (html) => {
     const option = {
         revision: "",
         detectionPath: "",
-        folderName: ".chromium-browser-snapshots",
+        folderName: "workspace/.chromium-browser-snapshots",
         defaultHosts: ["https://storage.googleapis.com", "https://npm.taobao.org/mirrors"],
         hosts: [],
         cacheRevisions: 2,
