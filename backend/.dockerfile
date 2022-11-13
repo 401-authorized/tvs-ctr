@@ -1,4 +1,4 @@
-FROM node-16.0.0-slim
+FROM node:16
 
 # We don't need the standalone Chromium
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
