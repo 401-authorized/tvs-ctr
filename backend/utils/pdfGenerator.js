@@ -1,11 +1,7 @@
 const puppeteer = require("puppeteer");
 const path = require("path");
 const generatePdf = async (html) => {
-  const browser = await puppeteer.launch({
-    'args' : [
-      '--no-sandbox',
-    ]
-  });
+  const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.setContent(html);
   await page.addStyleTag({
